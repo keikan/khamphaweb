@@ -1,0 +1,324 @@
+2017-05-20 05:25:14 Error: Fatal Error (1): Call to undefined function first() in [/Applications/XAMPP/xamppfiles/htdocs/demochay/app/Controller/LinkController.php, line 18]
+2017-05-20 05:25:14 Error: [FatalErrorException] Call to undefined function first()
+Request URL: /demochay/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 18, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 18, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-20 05:36:16 Error: Fatal Error (1): Class 'Cake\Core\Configure' not found in [/Applications/XAMPP/xamppfiles/htdocs/demochay/app/View/Link/index.ctp, line 24]
+2017-05-20 05:36:16 Error: [FatalErrorException] Class 'Cake\Core\Configure' not found
+Request URL: /demochay/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Class 'Cake\\Cor...', '/Applications/X...', 24)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Cake\\Cor...', '/Applications/X...', 24, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Cake\\Cor...', '/Applications/X...', 24, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-20 05:37:23 Error: Fatal Error (1): Class 'Cake\Core\Configure' not found in [/Applications/XAMPP/xamppfiles/htdocs/demochay/app/View/Link/index.ctp, line 24]
+2017-05-20 05:37:23 Error: [FatalErrorException] Class 'Cake\Core\Configure' not found
+Request URL: /demochay/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Class 'Cake\\Cor...', '/Applications/X...', 24)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Cake\\Cor...', '/Applications/X...', 24, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Cake\\Cor...', '/Applications/X...', 24, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-20 05:38:18 Error: [MissingHelperException] Helper class UrlHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UrlHelper',
+  'plugin' => false,
+)
+Request URL: /demochay/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Url')
+#1 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(858): HelperCollection->__isset('Url')
+#2 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/View/Link/index.ctp(22): View->__get('Url')
+#3 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(971): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LinkController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-05-20 05:38:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /demochay/css/cake.css
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-20 05:38:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /demochay/css/home.css
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-20 05:38:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /demochay/css/base.css
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-05-20 05:39:20 Error: [MissingHelperException] Helper class UrlHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UrlHelper',
+  'plugin' => false,
+)
+Request URL: /demochay/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Url')
+#1 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(858): HelperCollection->__isset('Url')
+#2 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/View/Link/index.ctp(14): View->__get('Url')
+#3 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(971): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LinkController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-05-20 05:39:59 Error: [MissingHelperException] Helper class UrlHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UrlHelper',
+  'plugin' => false,
+)
+Request URL: /demochay/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Url')
+#1 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(858): HelperCollection->__isset('Url')
+#2 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/View/Link/index.ctp(13): View->__get('Url')
+#3 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(971): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LinkController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-05-20 05:40:04 Error: [MissingHelperException] Helper class UrlHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UrlHelper',
+  'plugin' => false,
+)
+Request URL: /demochay/link
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Url')
+#1 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(858): HelperCollection->__isset('Url')
+#2 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/View/Link/index.ctp(13): View->__get('Url')
+#3 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(971): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LinkController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-05-20 05:40:16 Error: [MissingHelperException] Helper class UrlHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UrlHelper',
+  'plugin' => false,
+)
+Request URL: /demochay/link
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Url')
+#1 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(858): HelperCollection->__isset('Url')
+#2 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/View/Link/index.ctp(13): View->__get('Url')
+#3 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(971): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LinkController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-05-20 05:40:20 Error: [MissingHelperException] Helper class UrlHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UrlHelper',
+  'plugin' => false,
+)
+Request URL: /demochay/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Url')
+#1 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(858): HelperCollection->__isset('Url')
+#2 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/View/Link/index.ctp(13): View->__get('Url')
+#3 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(971): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LinkController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-05-20 05:42:34 Error: [MissingHelperException] Helper class UrlHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UrlHelper',
+  'plugin' => false,
+)
+Request URL: /demochay/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Url')
+#1 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(858): HelperCollection->__isset('Url')
+#2 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/View/Link/index.ctp(13): View->__get('Url')
+#3 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(971): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LinkController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2017-05-20 05:45:04 Error: Fatal Error (1): Class 'Cake\Core\Configure' not found in [/Applications/XAMPP/xamppfiles/htdocs/demochay/app/View/Layouts/default.ctp, line 24]
+2017-05-20 05:45:04 Error: [FatalErrorException] Class 'Cake\Core\Configure' not found
+Request URL: /demochay/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Class 'Cake\\Cor...', '/Applications/X...', 24)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Cake\\Cor...', '/Applications/X...', 24, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Cake\\Cor...', '/Applications/X...', 24, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-20 05:49:36 Error: [MissingActionException] Action LinkController::requestLink() could not be found.
+Exception Attributes: array (
+  'controller' => 'LinkController',
+  'action' => 'requestLink',
+)
+Request URL: /demochay/link/requestLink
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LinkController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-05-20 05:50:52 Error: [MissingActionException] Action LinkController::requestLink() could not be found.
+Exception Attributes: array (
+  'controller' => 'LinkController',
+  'action' => 'requestLink',
+)
+Request URL: /demochay/link/requestLink
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LinkController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-05-20 05:53:52 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/XAMPP/xamppfiles/htdocs/demochay/app/Controller/LinkController.php, line 32]
+2017-05-20 05:53:52 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /demochay/link/requestLink
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 32, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 32, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-20 05:54:23 Error: Fatal Error (1): Call to a member function first() on array in [/Applications/XAMPP/xamppfiles/htdocs/demochay/app/Controller/LinkController.php, line 34]
+2017-05-20 05:54:23 Error: [FatalErrorException] Call to a member function first() on array
+Request URL: /demochay/link/requestLink
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 34, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 34, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-05-20 05:56:38 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'findfind' at line 1
+Request URL: /demochay/link/requestLink
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('findfind', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('findfind', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Model/Datasource/DboSource.php(616): DboSource->fetchAll('findfind', Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Model/Model.php(834): DboSource->query('findfind', Array, Object(Link))
+#5 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/Controller/LinkController.php(37): Model->__call('findfind', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/Controller/LinkController.php(37): Link->findfind('first', Array)
+#7 [internal function]: LinkController->requestLink()
+#8 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(LinkController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LinkController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-05-20 05:56:43 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'findfind' at line 1
+Request URL: /demochay/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('findfind', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('findfind', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Model/Datasource/DboSource.php(616): DboSource->fetchAll('findfind', Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Model/Model.php(834): DboSource->query('findfind', Array, Object(Link))
+#5 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/Controller/LinkController.php(20): Model->__call('findfind', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/Controller/LinkController.php(20): Link->findfind('first', Array)
+#7 [internal function]: LinkController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(LinkController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LinkController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-05-20 05:58:58 Error: [MissingActionException] Action LinkController::23131() could not be found.
+Exception Attributes: array (
+  'controller' => 'LinkController',
+  'action' => '23131',
+)
+Request URL: /demochay/link/23131
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LinkController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-05-20 06:04:50 Error: [MissingViewException] View file "Link/gen_link.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Link/gen_link.ctp',
+)
+Request URL: /demochay/link/genLink
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LinkController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-05-20 06:08:02 Error: [MissingViewException] View file "Link/gen_link.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Link/gen_link.ctp',
+)
+Request URL: /demochay/link/genLink
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LinkController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-05-20 06:27:48 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'ktoptenc_kpweb\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /demochay/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Model/Datasource/DboSource.php(269): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Model/Model.php(3640): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Model/Model.php(1162): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Model/Model.php(3667): Model->setSource('links')
+#5 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Model/Model.php(3038): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Model/Model.php(3010): Model->_readDataSource('first', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/Controller/LinkController.php(20): Model->find('first', Array)
+#8 [internal function]: LinkController->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(LinkController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/demochay/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LinkController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/demochay/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
