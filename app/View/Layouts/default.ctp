@@ -18,47 +18,58 @@
 //$cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="vi">
+
 <head>
-<!--	--><?php //echo $this->Html->charset(); ?>
-	<title>
-		Khám phá web.
-	</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:500i|Roboto:300,400,700|Roboto+Mono" rel="stylesheet">
+    <title>Khám phá website</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="It, it solution,solution, website,link" />
+    <link href="https://plus.google.com/114644939574462223089" rel="author">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"></meta>
+    <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport"></meta>
+    <meta content="Lấy tất cả website đã tồn tại" name="description">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"></meta>
+    <link rel="icon" href="img/fav.png">
+    <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport"></meta>
+    <meta content="index, follow" name="ROBOTS">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,400,600,700&amp;subset=vietnamese" rel="stylesheet">
+<!--    <link rel="stylesheet" type="text/css" href="khamphaweb/vendor/css/font-awesome.min.css">-->
+<!--    <link rel="stylesheet" type="text/css" href="khamphaweb/vendor/css/bootstrap.min.css">-->
+<!--    <link rel="stylesheet" type="text/css" href="khamphaweb/vendor/css/slick.css">-->
+<!--    <link rel="stylesheet" type="text/css" href="khamphaweb/vendor/css/ap8.css">-->
+<!--    <link rel="stylesheet" type="text/css" href="khamphaweb/vendor/css/animate.css">-->
+<!--    <link rel="stylesheet" type="text/css" href="khamphaweb/css/style.css">-->
+    <link rel="stylesheet" type="text/css" href="<?= $this->webroot . 'vendor/css/font-awesome.min.css' ?>">
 	<?php
 //		echo $this->Html->meta('icon');
 //
-		echo $this->Html->css('style');
+        echo $this->Html->css('/vendor/css/bootstrap.min');
+        echo $this->Html->css('/vendor/css/slick');
+        echo $this->Html->css('/vendor/css/slick');
+        echo $this->Html->css('/vendor/css/ap8');
+        echo $this->Html->css('/vendor/css/animate');
+        echo $this->Html->css('style');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
-
+    <script type="text/javascript" src="vendor/js/jquery.2.1.1.min.js"></script>
+    <script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
 </head>
 <body>
 	<div id="container">
-<!--		<div id="header">-->
-<!--			<h1>--><?php //echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?><!--</h1>-->
-<!--		</div>-->
 		<div id="content">
 
 			<?php echo $this->Flash->render(); ?>
 
 			<?php echo $this->fetch('content'); ?>
 		</div>
-<!--		<div id="footer">-->
-<!--			--><?php //echo $this->Html->link(
-//					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-//					'http://www.cakephp.org/',
-//					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
-//				);
-//			?>
-<!--			<p>-->
-<!--				--><?php //echo $cakeVersion; ?>
-<!--			</p>-->
-<!--		</div>-->
+
 	</div>
-<!--	--><?php //echo $this->element('sql_dump'); ?>
 </body>
 </html>

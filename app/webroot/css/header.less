@@ -1,0 +1,32 @@
+
+.header{
+    .absolute;
+    top: 0px;
+    .fullw;
+    height: 55px;
+    z-index: 100;
+    .logo{
+        .left;
+        padding:10px 0px;
+        img{
+            height: 30px;
+        }
+    }
+    .links{
+        .right;
+        margin-top: 10px;
+        .url{
+            .left;
+            .inline;
+            padding:10px 0px;
+            margin-left: 30px;
+            .c(#fff);
+            .thin;
+            .opacity(0.6);
+            &.active,&:hover{
+                .opacity(1);
+                .normal;
+            }
+        }
+    }
+}

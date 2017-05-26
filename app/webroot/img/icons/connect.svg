@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Basic//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-basic.dtd">
+<svg version="1.1" baseProfile="basic" id="Layer_1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px"
+	 viewBox="0 0 100 100" xml:space="preserve">
+<g>
+	
+		<rect x="32.841" y="30.488" fill="#FFFFFF" stroke="#85D7F5" stroke-width="2" stroke-miterlimit="10" width="37.874" height="41.626"/>
+	<g>
+		<circle fill="#00ABEC" cx="42.565" cy="41.747" r="2.047"/>
+		
+			<line fill="#FFFFFF" stroke="#85D7F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="49.73" y1="41.747" x2="63.037" y2="41.747"/>
+	</g>
+	<g>
+		<circle fill="#00ABEC" cx="42.565" cy="51.301" r="2.047"/>
+		
+			<line fill="#FFFFFF" stroke="#85D7F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="49.73" y1="51.301" x2="63.037" y2="51.301"/>
+	</g>
+	<g>
+		<circle fill="#00ABEC" cx="42.565" cy="60.854" r="2.047"/>
+		
+			<line fill="#FFFFFF" stroke="#85D7F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="49.73" y1="60.854" x2="63.037" y2="60.854"/>
+	</g>
+	<g>
+		<polygon fill="#FFFFFF" stroke="#00ABEC" stroke-width="2" stroke-miterlimit="10" points="49.73,34.923 53.143,25.37 
+			71.069,8.125 76.345,13.427 58.602,30.488 		"/>
+		<line fill="#FFFFFF" stroke="#00ABEC" stroke-width="2" stroke-miterlimit="10" x1="53.143" y1="25.37" x2="58.161" y2="30.388"/>
+		
+			<line fill="#FFFFFF" stroke="#00ABEC" stroke-width="2" stroke-miterlimit="10" x1="67.908" y1="11.183" x2="73.185" y2="16.459"/>
+	</g>
+	<g>
+		<circle fill="#FFFFFF" stroke="#00ABEC" stroke-width="2" stroke-miterlimit="10" cx="16.335" cy="24.858" r="5.118"/>
+		<circle fill="#FFFFFF" stroke="#85D7F5" stroke-width="2" stroke-miterlimit="10" cx="11.211" cy="66.821" r="5.118"/>
+		<circle fill="#FFFFFF" stroke="#00ABEC" stroke-width="2" stroke-miterlimit="10" cx="44.99" cy="92.24" r="5.118"/>
+		<circle fill="#FFFFFF" stroke="#85D7F5" stroke-width="2" stroke-miterlimit="10" cx="83.893" cy="75.696" r="5.118"/>
+		<circle fill="#FFFFFF" stroke="#00ABEC" stroke-width="2" stroke-miterlimit="10" cx="89.017" cy="33.733" r="5.118"/>
+		<circle fill="#FFFFFF" stroke="#85D7F5" stroke-width="2" stroke-miterlimit="10" cx="55.238" cy="8.314" r="5.118"/>
+	</g>
+</g>
+</svg>
