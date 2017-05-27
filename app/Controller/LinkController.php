@@ -15,20 +15,13 @@ class LinkController extends AppController
 
     public function index(){
 
-        $link = $this->Link->find('first', array(
-            'conditions' => array('id' => 1)
-        ));
+//        $this->Counter->_constructDB();
+        $listLink = $this->Link->find('all', [
+            "limit"  => 10,
+            "order" => "rand()"
+        ]);
 
-//        pr($link);
-//
-//        echo $link["Link"]['id'];
-//
-//        $this->Link->save([
-//            "id" => $link["Link"]['id'],
-//            "rank" => 10,
-//        ]);
-//        echo "chay nhe em";
-//        die;
+        $this->set('listLink',$listLink);
     }
 
     public function requestLink(){
@@ -37,10 +30,13 @@ class LinkController extends AppController
             'conditions' => array('id' => $id)
         ));
 
+
         $this->Link->save(array(
             "id" => $id,
             "rank" => $links["Link"]['rank'] + 1,
         ));
+
+
         $this->redirect($links["Link"]['link']);
 
     }
@@ -52,6 +48,7 @@ class LinkController extends AppController
         if (($handle = fopen($data, "r")) !== FALSE) {
             while (($data = fgetcsv($handle, 0, ",")) !== FALSE) {
                 echo $i."</br>";
+                $i++;
                 if(!empty($data[0])) {
                     $this->Link->create();
                     $this->Link->save(array(

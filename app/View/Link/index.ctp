@@ -1,3 +1,4 @@
+
 <div class="header">
     <div class="container">
         <div class="logo">
@@ -41,29 +42,42 @@
         <div class="list-links">
             <div class="li -head">
                 <div class="name">Links</div>
-                <div class="cat">Categories</div>
+<!--                <div class="cat">Categories</div>-->
                 <div class="clearfix"></div>
             </div>
-            <div class="li">
-                <div class="name"><a href="#" class="url">Dantri.com</a></div>
-                <div class="cat"><a href="#" class="url">Tin Tức</a></div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="li">
-                <div class="name"><a href="#" class="url">vnepxess.com</a></div>
-                <div class="cat"><a href="#" class="url">Kinh Tế - Xã hội</a></div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="li">
-                <div class="name"><a href="#" class="url">phapluat.com</a></div>
-                <div class="cat"><a href="#" class="url">Pháp Luật</a></div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="li">
-                <div class="name"><a href="#" class="url">spa.com</a></div>
-                <div class="cat"><a href="#" class="url">Làm đẹp</a></div>
-                <div class="clearfix"></div>
-            </div>
+
+            <?php
+                for($i = 0; $i< count($listLink); $i = $i + 1){
+                    ?>
+                    <div class="li">
+                        <div class="name"><a href="<?php echo $listLink[$i]["Link"]["link"] ?>" class="url"><?php echo $listLink[$i]["Link"]["link"]; $i = $i + 1; ?></a></div>
+                        <div class="cat"><a href="<?php echo $listLink[$i]["Link"]["link"] ?>" class="url"><?php echo $listLink[$i]["Link"]["link"] ?></a></div>
+                        <div class="clearfix"></div>
+                    </div>
+                <?php
+                }
+            ?>
+
+<!--            <div class="li">-->
+<!--                <div class="name"><a href="#" class="url">Dantri.com</a></div>-->
+<!--                <div class="cat"><a href="#" class="url">Tin Tức</a></div>-->
+<!--                <div class="clearfix"></div>-->
+<!--            </div>-->
+<!--            <div class="li">-->
+<!--                <div class="name"><a href="#" class="url">vnepxess.com</a></div>-->
+<!--                <div class="cat"><a href="#" class="url">Kinh Tế - Xã hội</a></div>-->
+<!--                <div class="clearfix"></div>-->
+<!--            </div>-->
+<!--            <div class="li">-->
+<!--                <div class="name"><a href="#" class="url">phapluat.com</a></div>-->
+<!--                <div class="cat"><a href="#" class="url">Pháp Luật</a></div>-->
+<!--                <div class="clearfix"></div>-->
+<!--            </div>-->
+<!--            <div class="li">-->
+<!--                <div class="name"><a href="#" class="url">spa.com</a></div>-->
+<!--                <div class="cat"><a href="#" class="url">Làm đẹp</a></div>-->
+<!--                <div class="clearfix"></div>-->
+<!--            </div>-->
         </div>
     </div>
     <div class="footer">

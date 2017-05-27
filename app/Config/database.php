@@ -83,7 +83,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => '',
-		'database' => 'dtu_khamphaweb',
+		'database' => 'khamphaweb',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
