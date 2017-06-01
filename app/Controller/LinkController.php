@@ -16,10 +16,10 @@ class LinkController extends AppController
     public function index(){
 
 //        $this->Counter->_constructDB();
-        $listLink = $this->Link->find('all', [
+        $listLink = $this->Link->find('all', array(
             "limit"  => 10,
             "order" => "rand()"
-        ]);
+        ));
 
         $this->set('listLink',$listLink);
     }

@@ -60,8 +60,15 @@
     <script src="js/custom.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
+
+    <script type="text/javascript">
+        function load() {
+            setTimeout("window.open(self.location, '_self');", 60000);
+        }
+    </script>
+
 </head>
-<body>
+<body onload="load()">
 	<div id="container">
 		<div id="content">
 
