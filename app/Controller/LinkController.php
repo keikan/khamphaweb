@@ -8,15 +8,16 @@
  */
 
 App::uses('AppController', 'Controller');
+
 class LinkController extends AppController
 {
 
-    public $uses = array('Link');
+    public $uses = array('Link', 'Subdomain');
 
     public function index(){
 
 //        $this->Counter->_constructDB();
-        $listLink = $this->Link->find('all', array(
+        $listLink = $this->Subdomain->find('all', array(
             "limit"  => 10,
             "order" => "rand()"
         ));
@@ -25,36 +26,52 @@ class LinkController extends AppController
     }
 
     public function requestLink(){
-        $id = rand(1,17148);
-        $links = $this->Link->find('first', array(
-            'conditions' => array('id' => $id)
-        ));
+        $links = "";
+        for($i = 0; $i < 100 ; $i ++) {
+            $id = rand(2, 65536);
+            $links = $this->Subdomain->find('first', array(
+                'conditions' => array('id' => $id)
+            ));
+            if(strlen($links["Subdomain"]['link']) > 0)
+                break;
+        }
 
-
-        $this->Link->save(array(
+        $this->Subdomain->save(array(
             "id" => $id,
-            "rank" => $links["Link"]['rank'] + 1,
+            "rank" => $links["Subdomain"]['rank'] + 1,
         ));
 
 
-        $this->redirect($links["Link"]['link']);
+        $this->redirect($links["Subdomain"]['link']);
 
     }
 
     public function genLink(){
-        $data = 'list_url.csv';
+
+        $data = "text_demo.txt";
         $date = date('Y-m-d H:i:s');
         $i = 0;
+        echo "hôm nay là thứ hai nhé";
+
+        $rs = file_get_contents($data);
+        pr($rs);
         if (($handle = fopen($data, "r")) !== FALSE) {
             while (($data = fgetcsv($handle, 0, ",")) !== FALSE) {
-                echo $i."</br>";
+                $data = utf8_encode($data);
+                echo "</br>". $data[0];
                 $i++;
+                if ($i == 10 )
+                    break;
                 if(!empty($data[0])) {
-                    $this->Link->create();
-                    $this->Link->save(array(
+                    $this->Subdomain->create();
+                    $this->Subdomain->save(array(
                         "link" => $data[0],
-                        "rank" => 0,
-                        "created" => $date,
+//                        "title" => $data[1],
+//                        "description" => $data[2],
+//                        "keyword" => $data[3],
+//                        "linkref" => $data[4],
+//                        "rank" => 0,
+//                        "created" => $date,
                         "visit" => 0,
                     ));
                 }
@@ -68,6 +85,50 @@ class LinkController extends AppController
 
         fclose($handle);
         die;
+    }
+
+    public function genLinkFromExcel(){
+        App::import('Vendor', 'PHPExcel/PHPExcel/IOFactory');
+        ini_set('max_execution_time', 3000);
+        $objPHPExcel = PHPExcel_IOFactory::load(WWW_ROOT . 'datalinks.xls');
+        $numPage = 138499;
+        $date = date('Y-m-d H:i:s');
+
+        for($i = 1; $i < $numPage; $i++){
+            $link = $objPHPExcel->getActiveSheet()->getCell('A'.$i)->getValue();
+            $title = $objPHPExcel->getActiveSheet()->getCell('B'.$i)->getValue();
+            $des = $objPHPExcel->getActiveSheet()->getCell('C'.$i)->getValue();
+            $key = $objPHPExcel->getActiveSheet()->getCell('D'.$i)->getValue();
+            $ref = $objPHPExcel->getActiveSheet()->getCell('E'.$i)->getValue();
+
+            if(strlen($key) == 0)
+                $key = "";
+            if(strlen($title) == 0)
+                $title = "";
+            if(strlen($des) == 0)
+                $des = "";
+            if(strlen($ref) == 0)
+                $ref = "";
+
+
+            if(strlen($link) > 0) {
+                $this->Subdomain->create();
+                $this->Subdomain->save(array(
+                    "link" => $link,
+                    "title" => $title,
+                    "description" => $des,
+                    "keyword" => $key,
+                    "linkref" => $ref,
+                    "rank" => 0,
+                    "created" => $date,
+                    "visit" => 0,
+                ));
+            }
+
+        }
+        echo 'Thanh cong';
+        die;
+
     }
 
 }

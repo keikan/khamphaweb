@@ -48,10 +48,34 @@
 
             <?php
                 for($i = 0; $i< count($listLink); $i = $i + 1){
+                    $maxLenght = 40;
                     ?>
                     <div class="li">
-                        <div class="name"><a href="<?php echo $listLink[$i]["Link"]["link"] ?>" class="url"><?php echo $listLink[$i]["Link"]["link"]; $i = $i + 1; ?></a></div>
-                        <div class="cat"><a href="<?php echo $listLink[$i]["Link"]["link"] ?>" class="url"><?php echo $listLink[$i]["Link"]["link"] ?></a></div>
+                        <div class="name"><a href="<?php echo $listLink[$i]["Subdomain"]["link"] ?>" class="url">
+                                <?php
+                                    $l = $listLink[$i]["Subdomain"]["title"];
+                                    if(strlen($l) == 0)
+                                        $l = $listLink[$i]["Subdomain"]["link"];
+                                    if(strlen($l) > $maxLenght) {
+                                        $l = substr($l, 0, $maxLenght);
+                                        $l = $l . "...";
+                                    }
+                                    echo $l;
+                                    $i = $i + 1;
+                                ?>
+                            </a></div>
+                        <div class="cat"><a href="<?php echo $listLink[$i]["Subdomain"]["link"] ?>" class="url">
+                                <?php
+                                $l = $listLink[$i]["Subdomain"]["title"];
+                                if(strlen($l) == 0)
+                                    $l = $listLink[$i]["Subdomain"]["link"];
+                                if(strlen($l) > $maxLenght) {
+                                    $l = substr($l, 0, $maxLenght);
+                                    $l = $l . "...";
+                                }
+                                echo $l;
+                                ?>
+                            </a></div>
                         <div class="clearfix"></div>
                     </div>
                 <?php
