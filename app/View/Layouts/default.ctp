@@ -32,18 +32,11 @@
     <link rel="icon" href="img/fav.png">
     <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport"></meta>
     <meta content="index, follow" name="ROBOTS">
-
+    <?php echo $this->element('google-analytics'); ?>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,400,600,700&amp;subset=vietnamese" rel="stylesheet">
-<!--    <link rel="stylesheet" type="text/css" href="khamphaweb/vendor/css/font-awesome.min.css">-->
-<!--    <link rel="stylesheet" type="text/css" href="khamphaweb/vendor/css/bootstrap.min.css">-->
-<!--    <link rel="stylesheet" type="text/css" href="khamphaweb/vendor/css/slick.css">-->
-<!--    <link rel="stylesheet" type="text/css" href="khamphaweb/vendor/css/ap8.css">-->
-<!--    <link rel="stylesheet" type="text/css" href="khamphaweb/vendor/css/animate.css">-->
-<!--    <link rel="stylesheet" type="text/css" href="khamphaweb/css/style.css">-->
+
     <link rel="stylesheet" type="text/css" href="<?= $this->webroot . 'vendor/css/font-awesome.min.css' ?>">
 	<?php
-//		echo $this->Html->meta('icon');
-//
         echo $this->Html->css('/vendor/css/bootstrap.min');
         echo $this->Html->css('/vendor/css/slick');
         echo $this->Html->css('/vendor/css/slick');
