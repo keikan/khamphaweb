@@ -28,7 +28,7 @@ class LinkController extends AppController
     public function requestLink(){
         $links = "";
         for($i = 0; $i < 100 ; $i ++) {
-            $id = rand(2, 65536);
+            $id = rand(2, 120501);
             $links = $this->Subdomain->find('first', array(
                 'conditions' => array('id' => $id)
             ));
@@ -38,11 +38,31 @@ class LinkController extends AppController
 
         $this->Subdomain->save(array(
             "id" => $id,
-            "rank" => $links["Subdomain"]['rank'] + 1,
+            "visit" => $links["Subdomain"]["visit"] + 1,
         ));
 
 
         $this->redirect($links["Subdomain"]['link']);
+
+    }
+
+    public function requestLinkList(){
+        $paramLink = $this->request->query('link');
+        $paramID = $this->request->query('id');
+
+
+        $links = $this->Subdomain->find('first', array(
+            'conditions' => array('id' => $paramID)
+        ));
+
+        pr($links);
+        $this->Subdomain->save(array(
+            "id" => $paramID,
+            "visit" => $links["Subdomain"]["visit"] + 1,
+        ));
+
+
+        $this->redirect($paramLink);
 
     }
 
@@ -51,7 +71,6 @@ class LinkController extends AppController
         $data = "text_demo.txt";
         $date = date('Y-m-d H:i:s');
         $i = 0;
-        echo "hôm nay là thứ hai nhé";
 
         $rs = file_get_contents($data);
         pr($rs);
@@ -89,8 +108,9 @@ class LinkController extends AppController
 
     public function genLinkFromExcel(){
         App::import('Vendor', 'PHPExcel/PHPExcel/IOFactory');
+        ini_set('memory_limit', '-1');
         ini_set('max_execution_time', 3000);
-        $objPHPExcel = PHPExcel_IOFactory::load(WWW_ROOT . 'datalinks.xls');
+        $objPHPExcel = PHPExcel_IOFactory::load(WWW_ROOT . 'LINKVN.xlsx');
         $numPage = 138499;
         $date = date('Y-m-d H:i:s');
 
@@ -100,7 +120,7 @@ class LinkController extends AppController
             $des = $objPHPExcel->getActiveSheet()->getCell('C'.$i)->getValue();
             $key = $objPHPExcel->getActiveSheet()->getCell('D'.$i)->getValue();
             $ref = $objPHPExcel->getActiveSheet()->getCell('E'.$i)->getValue();
-
+            $lang = $objPHPExcel->getActiveSheet()->getCell('F'.$i)->getValue();
             if(strlen($key) == 0)
                 $key = "";
             if(strlen($title) == 0)
@@ -109,7 +129,8 @@ class LinkController extends AppController
                 $des = "";
             if(strlen($ref) == 0)
                 $ref = "";
-
+            if(strlen($lang) == 0)
+                $lang = "";
 
             if(strlen($link) > 0) {
                 $this->Subdomain->create();
@@ -119,6 +140,7 @@ class LinkController extends AppController
                     "description" => $des,
                     "keyword" => $key,
                     "linkref" => $ref,
+                    "language" => $lang,
                     "rank" => 0,
                     "created" => $date,
                     "visit" => 0,

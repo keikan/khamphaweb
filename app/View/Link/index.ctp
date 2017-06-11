@@ -51,7 +51,10 @@
                     $maxLenght = 40;
                     ?>
                     <div class="li">
-                        <div class="name"><a href="<?php echo $listLink[$i]["Subdomain"]["link"] ?>" class="url">
+                        <div class="name"><a href="<?= $this->Html->url(array('action' => 'requestLinkList', "?" => array(
+                                'link' => $listLink[$i]["Subdomain"]["link"],
+                                'id' => $listLink[$i]["Subdomain"]["id"]
+                            ),)) ?>" target="_blank" class="url">
                                 <?php
                                     $l = $listLink[$i]["Subdomain"]["title"];
                                     if(strlen($l) == 0)
@@ -64,7 +67,10 @@
                                     $i = $i + 1;
                                 ?>
                             </a></div>
-                        <div class="cat"><a href="<?php echo $listLink[$i]["Subdomain"]["link"] ?>" class="url">
+                        <div class="cat"><a href="<?= $this->Html->url(array('action' => 'requestLinkList', "?" => array(
+                                'link' => $listLink[$i]["Subdomain"]["link"],
+                                'id' => $listLink[$i]["Subdomain"]["id"]
+                            ),)) ?>" target="_blank" class="url">
                                 <?php
                                 $l = $listLink[$i]["Subdomain"]["title"];
                                 if(strlen($l) == 0)
